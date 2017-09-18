@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <display-name></display-name>
+ 
+  <servlet>
+    <servlet-name>depaSaveServlet</servlet-name>
+    <servlet-class> com.JavaWeb.web.DepaSaveServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.JavaWeb.web.LoginServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>GradeListServlet</servlet-name>
+    <servlet-class>com.JavaWeb.web.GradeListServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SpecListServlet</servlet-name>
+    <servlet-class>com.JavaWeb.web.SpecListServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DepaListServlet</servlet-name>
+    <servlet-class>com.JavaWeb.web.DepaListServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>safeExitServlet</servlet-name>
+    <servlet-class>com.JavaWeb.web.SafeExitServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>gradeComboListServlet</servlet-name>
+  	<servlet-class>com.JavaWeb.web.GradeComboListServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>depaComboListServlet</servlet-name>
+  	<servlet-class>com.JavaWeb.web.DepaComboListServlet</servlet-class>
+  </servlet>
+  
+   <servlet>
+  	<servlet-name>specComboListServlet</servlet-name>
+  	<servlet-class>com.JavaWeb.web.SpecComboListServlet</servlet-class>
+  </servlet>
+  
+   <servlet>
+  	<servlet-name>studentListServlet</servlet-name>
+  	<servlet-class>com.JavaWeb.web.StudentListServlet</servlet-class>
+  </servlet>
+  
+   <servlet>
+  	<servlet-name>gradeSaveServlet</servlet-name>
+  	<servlet-class>com.JavaWeb.web.GradeSaveServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>specSaveServlet</servlet-name>
+  	<servlet-class>com.JavaWeb.web.SpecSaveServlet</servlet-class>
+  </servlet>
+  
+   <servlet>
+  	<servlet-name>studentSaveServlet</servlet-name>
+  	<servlet-class>com.JavaWeb.web.StudentSaveServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>stuSaveServlet</servlet-name>
+  	<servlet-class>com.JavaWeb.web.StuSaveServlet</servlet-class>
+  </servlet>
+  
+   <servlet>
+  	<servlet-name>gradeDeleteServlet</servlet-name>
+  	<servlet-class>com.JavaWeb.web.GradeDeleteServlet</servlet-class>
+  </servlet>
+   <servlet>
+  	<servlet-name>specDeleteServlet</servlet-name>
+  	<servlet-class>com.JavaWeb.web.SpecDeleteServlet</servlet-class>
+  </servlet>
+   <servlet>
+  	<servlet-name>depaDeleteServlet</servlet-name>
+  	<servlet-class>com.JavaWeb.web.DepaDeleteServlet</servlet-class>
+  </servlet>
+  
+   <servlet>
+  	<servlet-name>studentDeleteServlet</servlet-name>
+  	<servlet-class>com.JavaWeb.web.StudentDeleteServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>pwModifyServlet</servlet-name>
+  	<servlet-class>com.JavaWeb.web.PwModifyServlet</servlet-class>
+  </servlet>
+  
+
+   <servlet-mapping>
+    <servlet-name>pwModifyServlet</servlet-name>
+    <url-pattern>/pwmodify</url-pattern>
+  </servlet-mapping>	
+  
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>	
+   <servlet-mapping>
+    <servlet-name>GradeListServlet</servlet-name>
+    <url-pattern>/gradeList</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>SpecListServlet</servlet-name>
+    <url-pattern>/specList</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DepaListServlet</servlet-name>
+    <url-pattern>/depaList</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>safeExitServlet</servlet-name>
+    <url-pattern>/exit</url-pattern>
+  </servlet-mapping>	
+  <servlet-mapping>
+  	<servlet-name>gradeComboListServlet</servlet-name>
+  	<url-pattern>/gradeComboList</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>depaComboListServlet</servlet-name>
+  	<url-pattern>/depaComboList</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>specComboListServlet</servlet-name>
+  	<url-pattern>/specComboList</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>studentListServlet</servlet-name>
+  	<url-pattern>/studentList</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>gradeDeleteServlet</servlet-name>
+  	<url-pattern>/gradeDelete</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>specDeleteServlet</servlet-name>
+  	<url-pattern>/specDelete</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>depaDeleteServlet</servlet-name>
+  	<url-pattern>/depaDelete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>studentDeleteServlet</servlet-name>
+  	<url-pattern>/studentDelete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>gradeSaveServlet</servlet-name>
+  	<url-pattern>/gradeSave</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>depaSaveServlet</servlet-name>
+  	<url-pattern>/depaSave</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>specSaveServlet</servlet-name>
+  	<url-pattern>/specSave</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>studentSaveServlet</servlet-name>
+  	<url-pattern>/studentSave</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>stuSaveServlet</servlet-name>
+  	<url-pattern>/stuSave</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
